@@ -1,0 +1,90 @@
+.Seasons {
+    display:block;
+}
+
+.bg {
+    background-color: rgb(8, 59, 62);
+    color: white;
+    padding: 20px 20px;
+    border: 2px solid;
+}
+
+.Overview {
+    display:block;
+}
+
+.bgo {
+    background-color: rgb(98, 12, 104);
+    border: 2px solid;
+    color: rgb(255, 255, 255);
+    padding: 20px 20px;
+}
+
+.head {
+    display:none;
+}
+
+.headsbg {
+    background-color: rgb(19, 6, 73);
+    border: 2px solid;
+    color: rgb(255, 255, 255);
+    border-radius: 100px 30px 100px 5px;
+    box-shadow: 5px 5px 5px #828282; 
+}
+
+.candc {
+    display:flex;
+}
+
+.candcbg {
+    background-color: rgb(116, 26, 59);
+    border: 2px solid;
+    color: rgb(255, 255, 255);
+    padding: 20px 20px;
+}
+
+.rev {
+    display:flex;
+}
+
+.revbg {
+    background-color: rgb(98, 26, 21);
+    border: 2px solid;
+    color: rgb(255, 255, 255);
+    padding: 20px 20px;
+}
+
+body { background-color: #597daa;
+    margin:0px;
+}
+
+.link {
+    background-color: #20109d;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+.navbar ul{
+    list-style-type: none;
+    background-color:rgb(70, 52, 143);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color:rgb(30, 13, 97)
+}
+
+.navbar li{
+    float: left;
+}
