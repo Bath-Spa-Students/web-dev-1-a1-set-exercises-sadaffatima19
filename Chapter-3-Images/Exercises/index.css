@@ -1,0 +1,11 @@
+.image1 {
+    filter: grayscale(80%);
+}
+
+.image2 {
+    filter: contrast(200%);
+}
+
+.image3 {
+    filter: blur(5px);
+}
