@@ -1,0 +1,123 @@
+h1 {
+    font-size: 50px;
+    font-family: Tahoma;
+    margin: 0;
+    margin-top: 25px;
+    border-bottom: 2px solid;
+    width: auto;
+    display: inline-block;
+    border-bottom-width: 5px;
+}
+
+h3 {
+    margin: 0; 
+    margin-top: 3px;
+    font-size: 30px;
+    border-bottom: 2px solid;
+    width: auto;
+    display: inline-block;
+    border-bottom-width: 3.5px;
+}
+
+h2{
+    border-bottom: 2px solid;
+    width: auto;
+    display: inline-block;
+    border-bottom-width: 3.5px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: #12042E;
+    padding: 10px;
+    margin: 0px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-size: 27px;
+    font-family: Tahoma;
+}
+
+.navbar li{
+    display: inline-block;
+}
+
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Topbg {
+    background-color: #12042E;
+    border: 1px solid;
+    border-color:#12042E;
+    color: rgb(255, 255, 255);
+}
+
+.main{
+    display: flex;
+    flex: 1;
+}
+
+.left {
+    margin-left: 20px;
+    font-family: Arial;
+    font-size: 20px;
+    border-bottom: 3px solid white;
+}
+
+h3 {
+    font-family: Tahoma;
+}
+
+.bg{
+    background-color: #1A2E66;
+    border: 1px solid #1A2E66;
+    float: right; width: 700px; 
+    color: rgb(255, 255, 255);
+  }
+
+.right {
+    background-color: #1A2E66;
+    margin-left: 10px;
+    padding: 35px;
+    font-family: Arial;
+    font-size: 20px;
+    color: white;
+    float: right;
+    border-bottom: 10px solid white;
+    border-top: 20px solid white;
+}
+
+.right ul{
+    list-style-type: '-';
+    padding: 0;
+}
+
+.right {
+    float: right;
+    position: relative;
+    z-index: 9;
+}
+
+.footer {
+    text-align: center;
+    font-family: Arial;
+    background-color: #8D17E9;
+    color: rgb(255, 255, 255);
+    border-bottom: 5px solid #8D17E9;
+    padding: 0px;
+    border-top: 5px solid #8D17E9;
+    font-size: 20px;
+    overflow: hidden;
+}
