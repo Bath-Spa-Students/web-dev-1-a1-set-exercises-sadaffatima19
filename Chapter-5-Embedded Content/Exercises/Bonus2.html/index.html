@@ -1,14 +1,33 @@
+<!--The radio show loved the sampler you made for them before, but they'd like to give a more advanced system a go. In a new directory,
+    build on top of your previous sampler and include the following new ideas:
+
+* The show would like to include a text to speech feature. This feature allows presenters to type any text they like into a `<textarea>`
+element and have it converted to audio which then plays immediately. This new feature should be displayed in a seperate column next to
+the audio samples (see image below for reference);
+
+* The show would like to include more audio samples. However, they only want sampler to display nine samples at a time.
+Create a system whereby the team can use "left" and "right" arrows to scroll through an extended bank of samples.
+The team is open to your creative ideas as to what audio is included on these new pages. When the first page is displayed,
+the "left arrow" should be hidden, and when the last page is displayed the "right" arrow should be hidden (prevents users from
+scrolling to blank sample pages or encountering errors);
+
+* The team would like the length of the sample in seconds to be dynamically displayed underneath the sample title.
+
+Use the below example as a reference:
+
+![image](Audio%20Sampler/Soundboard_Advanced.png)-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced Soundboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type = "text/css" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Advanced Soundboard</h1>
+        <h1>Updated Soundboard</h1>
         <div id="soundboard">
             <!-- Audio samples will be displayed dynamically here -->
         </div>
@@ -21,5 +40,6 @@
             <img id="right-arrow" src="arrow-right.png" alt="Right Arrow">
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
