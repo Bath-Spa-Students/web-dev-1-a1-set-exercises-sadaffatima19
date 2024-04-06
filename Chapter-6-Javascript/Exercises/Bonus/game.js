@@ -3,53 +3,33 @@ var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
 var options = document.getElementById("options");
 var messageDisplay = document.getElementById("message");
-var scoreDisplay = document.getElementById("score"); // Added for score display
+var scoreDisplay = document.getElementById("score");
 var score = 0;
 
-colorDisplay.textContent = pickedColor;
+updateDisplay();
 
-// Display options
-colors.forEach(function(color) {
-    var option = document.createElement("div");
-    option.classList.add("option");
-    option.style.backgroundColor = color;
-    option.addEventListener("click", function() {
-        var clickedColor = this.style.backgroundColor; // Store the clicked color
-        if (clickedColor === pickedColor) { // Compare the clicked color with pickedColor
+options.addEventListener("click", function(event) {
+    if (event.target.classList.contains("option")) {
+        var clickedColor = event.target.style.backgroundColor;
+        if (clickedColor === pickedColor) {
             messageDisplay.textContent = "Correct!";
             score += 10;
-            scoreDisplay.textContent = score; // Update score display
-            generateNewGame();
+            updateDisplay();
         } else {
             messageDisplay.textContent = "Try Again";
-            this.style.backgroundColor = "#232323";
+            event.target.style.backgroundColor = "#232323";
         }
-    });
-    options.appendChild(option);
+    }
 });
 
-function generateNewGame() {
-    colors = generateRandomColors(6);
-    pickedColor = pickColor();
+function updateDisplay() {
     colorDisplay.textContent = pickedColor;
+    scoreDisplay.textContent = score;
     options.innerHTML = "";
-    messageDisplay.textContent = "";
     colors.forEach(function(color) {
         var option = document.createElement("div");
         option.classList.add("option");
         option.style.backgroundColor = color;
-        option.addEventListener("click", function() {
-            var clickedColor = this.style.backgroundColor; // Store the clicked color
-            if (clickedColor === pickedColor) { // Compare the clicked color with pickedColor
-                messageDisplay.textContent = "Correct!";
-                score += 10;
-                scoreDisplay.textContent = score; // Update score display
-                generateNewGame();
-            } else {
-                messageDisplay.textContent = "Try Again";
-                this.style.backgroundColor = "#232323";
-            }
-        });
         options.appendChild(option);
     });
 }
