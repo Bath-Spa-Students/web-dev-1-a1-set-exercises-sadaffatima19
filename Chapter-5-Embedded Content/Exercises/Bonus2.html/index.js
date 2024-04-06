@@ -5,12 +5,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const leftArrow = document.getElementById('left-arrow');
     const rightArrow = document.getElementById('right-arrow');
 
-    // Audio samples data (names and durations)
+    // Audio samples data
     const audioSamples = [
-        { name: 'C:\Users\marwa\Documents\GitHub\web-dev-1-a1-set-exercises-sadaffatima19\Chapter-5-Embedded Content\Exercises\Audio Sampler\Audio\ah-ha.mp3', duration: 10 },
-        { name: 'Sample 2', duration: 15 },
-        { name: 'Sample 3', duration: 20 },
-        // Add more samples as needed
+        { name: "Ah Ha", duration: 4 },
+        { name: "Back of the Net", duration: 3 },
+        { name: "Bang Out of Order", duration: 5 },
+        { name: "Dan", duration: 2 },
+        { name: "Email of the Evening", duration: 6 },
+        { name: "Hello Partridge", duration: 4 },
+        { name: "I Ate a Scotch Egg", duration: 3 },
+        { name: "I'm Confused", duration: 2 }
     ];
 
     // Pagination variables
@@ -53,60 +57,30 @@ document.addEventListener('DOMContentLoaded', function() {
         rightArrow.style.display = endIndex >= audioSamples.length ? 'none' : 'block';
     }
 
-    document.addEventListener('DOMContentLoaded', function() {
-        // Other code...
-    
-        // Function to toggle visibility of pagination arrows
-        function toggleArrows() {
-            const totalPages = Math.ceil(audioSamples.length / samplesPerPage);
-            leftArrow.style.display = currentPage === 0 ? 'none' : 'block';
-            rightArrow.style.display = currentPage === totalPages - 1 ? 'none' : 'block';
+    // Function to update current page and display samples
+    function updatePage(direction) {
+        const totalPages = Math.ceil(audioSamples.length / samplesPerPage);
+        if (direction === 'left' && currentPage > 0) {
+            currentPage--;
+        } else if (direction === 'right' && currentPage < totalPages - 1) {
+            currentPage++;
         }
-    
-        // Pagination event listeners
-        leftArrow.addEventListener('click', () => {
-            if (currentPage > 0) {
-                currentPage--;
-                displaySamples();
-                toggleArrows();
-            }
-        });
-    
-        rightArrow.addEventListener('click', () => {
-            const totalPages = Math.ceil(audioSamples.length / samplesPerPage);
-            if (currentPage < totalPages - 1) {
-                currentPage++;
-                displaySamples();
-                toggleArrows();
-            }
-        });
-    
-        // Initial display of samples and arrows
         displaySamples();
-        toggleArrows();
-    });
-    
+    }
 
     // Pagination event listeners
     leftArrow.addEventListener('click', () => {
-        if (currentPage > 0) {
-            currentPage--;
-            displaySamples();
-        }
+        updatePage('left');
     });
 
     rightArrow.addEventListener('click', () => {
-        const totalPages = Math.ceil(audioSamples.length / samplesPerPage);
-        if (currentPage < totalPages - 1) {
-            currentPage++;
-            displaySamples();
-        }
+        updatePage('right');
     });
 
     // Text-to-speech functionality
     convertButton.addEventListener('click', () => {
-        const text = textInput.value;
-        if (text.trim() !== '') {
+        const text = textInput.value.trim();
+        if (text !== '') {
             const utterance = new SpeechSynthesisUtterance(text);
             speechSynthesis.speak(utterance);
         }
