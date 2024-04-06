@@ -1,3 +1,17 @@
+<!--A local comedy radio show needs you to develop an audio soundboard for them. The soundboard will display a grid of Alan Partridge samples. When a sample is clicked the associated audio file will play. The audio samples for this exercise are located in Exercises/Audio Sampler. Your sampler must:
+
+* Include all of the samples in the Audio Sampler directory;
+* Display all samples on a single non-scrolling page;
+* Make use of correct semantic markup;
+* Display the correct sample name;
+* Change the colour of the background, and text, when the user hovers over a sample;
+* Include index.html, style.css and index.js files;
+* Include creative styling for your background, sample buttons, fonts and hover effects;
+
+Use the below example as a reference:
+
+![image](Audio%20Sampler/Soundboard.png)-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +23,8 @@
 <body>
     <div class="container">
         <h1>Alan Partridge Soundboard</h1>
-        <div id="soundboard">
+        <div id="soundboard" class="soundboard-container">
+            <!-- Sound buttons will be dynamically added here -->
         </div>
     </div>
     <script src="index.js"></script>
