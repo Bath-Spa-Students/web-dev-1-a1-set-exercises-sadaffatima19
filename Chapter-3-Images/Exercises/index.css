@@ -1,11 +1,14 @@
+/* Apply a grayscale filter to the image with class .image1 */
 .image1 {
-    filter: grayscale(80%);
+    filter: grayscale(80%); /* Grayscale effect intensity: 80% */
 }
 
+/* Increase contrast for the image with class .image2 */
 .image2 {
-    filter: contrast(200%);
+    filter: contrast(200%); /* Contrast level: 200% */
 }
 
+/* Apply a blur effect to the image with class .image3 */
 .image3 {
-    filter: blur(5px);
+    filter: blur(5px); /* Blur radius: 5 pixels */
 }
