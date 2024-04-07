@@ -1,123 +1,123 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ce66bf;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Set font family for the entire page */
+    background-color: #ce66bf; /* Set background color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px 40px; /* Increase padding on the right side */
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Set maximum width for the container */
+    margin: 20px auto; /* Center the container horizontally with some top margin */
+    padding: 20px 40px; /* Add padding on the top and bottom, increase padding on the right side */
+    background-color: #fff; /* Set background color for the container */
+    border-radius: 10px; /* Add border radius to create rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle depth effect */
 }
 
 h1 {
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
+    color: #333; /* Set text color for heading */
+    text-align: center; /* Center align the heading */
+    margin-bottom: 20px; /* Add bottom margin to the heading */
 }
 
 #soundboard {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    overflow-y: auto;
-    max-height: 400px;
+    display: grid; /* Use CSS grid for soundboard layout */
+    grid-template-columns: repeat(3, 1fr); /* Divide soundboard into 3 equal columns */
+    gap: 20px; /* Add gap between grid items */
+    overflow-y: auto; /* Enable vertical scrolling if soundboard exceeds its height */
+    max-height: 400px; /* Set maximum height for the soundboard with vertical scrolling */
 }
 
 .sample {
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: background-color 0.3s;
-    cursor: pointer;
+    color: white; /* Set text color for sample items */
+    padding: 20px; /* Add padding around sample items */
+    border-radius: 10px; /* Add border radius to create rounded corners */
+    display: flex; /* Use flexbox for sample item layout */
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center align text */
+    transition: background-color 0.3s; /* Add transition effect for background color change */
+    cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 .sample:nth-child(odd) {
-    background-color: #BA68C8; /* Light purple */
+    background-color: #BA68C8; /* Set background color for odd sample items */
 }
 
 .sample:nth-child(even) {
-    background-color: #FFCDD2; /* Light pink */
+    background-color: #FFCDD2; /* Set background color for even sample items */
 }
 
 .sample:hover {
-    background-color: #9575CD; /* Darker purple on hover */
+    background-color: #9575CD; /* Set background color for sample items on hover */
 }
 
 .audio-button {
-    background-color: transparent;
-    border: none;
-    color: inherit;
-    font-size: 16px;
-    cursor: pointer;
-    text-decoration: underline;
+    background-color: transparent; /* Set background color for audio buttons */
+    border: none; /* Remove border */
+    color: inherit; /* Inherit text color */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Change cursor to pointer */
+    text-decoration: underline; /* Add underline to text */
 }
 
 .audio-button:hover {
-    text-decoration: none;
+    text-decoration: none; /* Remove underline on hover */
 }
 
 span.duration {
-    font-size: 14px;
+    font-size: 14px; /* Set font size for duration text */
 }
 
 #text-to-speech {
-    margin-top: 20px;
-    text-align: center;
+    margin-top: 20px; /* Add top margin for text-to-speech section */
+    text-align: center; /* Center align text */
 }
 
 textarea {
-    width: 100%;
-    height: 100px;
-    resize: none;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    width: 100%; /* Set textarea width to 100% */
+    height: 100px; /* Set textarea height */
+    resize: none; /* Disable textarea resizing */
+    margin-bottom: 10px; /* Add bottom margin */
+    padding: 10px; /* Add padding */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    font-size: 16px; /* Set font size */
 }
 
 #convert-button {
-    background-color: #b92378;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    background-color: #b92378; /* Set background color for convert button */
+    color: white; /* Set text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 5px; /* Add border radius */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Add transition effect */
 }
 
 #convert-button:hover {
-    background-color: #b8568d;
+    background-color: #b8568d; /* Change background color on hover */
 }
 
 #pagination {
-    text-align: center;
-    margin-top: 20px;
+    text-align: center; /* Center align pagination */
+    margin-top: 20px; /* Add top margin */
 }
 
 #pagination img {
-    width: 20px;
-    height: 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    display: inline-block;
+    width: 20px; /* Set width for pagination arrows */
+    height: 20px; /* Set height for pagination arrows */
+    margin: 0 10px; /* Add margin */
+    cursor: pointer; /* Change cursor to pointer */
+    display: inline-block; /* Display as inline block */
 }
 
 #left-arrow {
-    display: none;
+    display: none; /* Hide left arrow by default */
 }
 
 #right-arrow {
-    display: inline-block;
+    display: inline-block; /* Display right arrow */
 }
