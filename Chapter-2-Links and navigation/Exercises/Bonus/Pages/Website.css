@@ -1,7 +1,9 @@
+/* Define styles for the Seasons section */
 .Seasons {
-    display:block;
+    display: block;
 }
 
+/* Define styles for elements with class 'bg' */
 .bg {
     background-color: rgb(8, 59, 62);
     color: white;
@@ -9,10 +11,12 @@
     border: 2px solid;
 }
 
+/* Define styles for the Overview section */
 .Overview {
-    display:block;
+    display: block;
 }
 
+/* Define styles for elements with class 'bgo' */
 .bgo {
     background-color: rgb(98, 12, 104);
     border: 2px solid;
@@ -20,10 +24,12 @@
     padding: 20px 20px;
 }
 
+/* Hide elements with class 'head' */
 .head {
-    display:none;
+    display: none;
 }
 
+/* Define styles for elements with class 'headsbg' */
 .headsbg {
     background-color: rgb(19, 6, 73);
     border: 2px solid;
@@ -32,10 +38,12 @@
     box-shadow: 5px 5px 5px #828282; 
 }
 
+/* Define styles for elements with class 'candc' */
 .candc {
-    display:flex;
+    display: flex;
 }
 
+/* Define styles for elements with class 'candcbg' */
 .candcbg {
     background-color: rgb(116, 26, 59);
     border: 2px solid;
@@ -43,10 +51,12 @@
     padding: 20px 20px;
 }
 
+/* Define styles for elements with class 'rev' */
 .rev {
-    display:flex;
+    display: flex;
 }
 
+/* Define styles for elements with class 'revbg' */
 .revbg {
     background-color: rgb(98, 26, 21);
     border: 2px solid;
@@ -54,26 +64,31 @@
     padding: 20px 20px;
 }
 
-body { background-color: #597daa;
-    margin:0px;
+/* Define styles for the body */
+body {
+    background-color: #597daa;
+    margin: 0px;
 }
 
+/* Define styles for elements with class 'link' */
 .link {
     background-color: #20109d;
     color: white;
     padding: 10px;
     text-decoration: none;
-  }
+}
 
-.navbar ul{
+/* Define styles for the navigation bar */
+.navbar ul {
     list-style-type: none;
-    background-color:rgb(70, 52, 143);
+    background-color: rgb(70, 52, 143);
     padding: 0px;
     margin: 0px;
     overflow: hidden;
 }
 
-.navbar a{
+/* Define styles for navigation links */
+.navbar a {
     color: white;
     text-decoration: none;
     padding: 15px;
@@ -81,10 +96,12 @@ body { background-color: #597daa;
     text-align: center;
 }
 
-.navbar a:hover{
-    background-color:rgb(30, 13, 97)
+/* Define styles for navigation links on hover */
+.navbar a:hover {
+    background-color: rgb(30, 13, 97);
 }
 
-.navbar li{
+/* Define styles for list items in the navigation bar */
+.navbar li {
     float: left;
 }
