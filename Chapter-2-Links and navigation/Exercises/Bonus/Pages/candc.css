@@ -1,50 +1,60 @@
-body { background-color: #597daa;
-    margin:0px;
+/* Set the background color of the body */
+body { 
+    background-color: #597daa;
+    margin: 0px; /* Remove default margin */
 }
 
-.navbar ul{
-    list-style-type: none;
-    background-color:rgb(70, 52, 143);
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
+/* Style the navigation bar */
+.navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    background-color: rgb(70, 52, 143); /* Set background color */
+    padding: 0px; /* Remove default padding */
+    margin: 0px; /* Remove default margin */
+    overflow: hidden; /* Hide overflowing content */
 }
 
-.navbar a{
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
+/* Style the navigation links */
+.navbar a {
+    color: white; /* Set text color */
+    text-decoration: none; /* Remove underline */
+    padding: 15px; /* Add padding */
+    display: block; /* Display links as block elements */
+    text-align: center; /* Center align text */
 }
 
-.navbar a:hover{
-    background-color:rgb(30, 13, 97)
+/* Change link background color on hover */
+.navbar a:hover {
+    background-color: rgb(30, 13, 97); /* Change background color */
 }
 
-.navbar li{
+/* Float the list items to the left */
+.navbar li {
     float: left;
 }
 
+/* Display cast and characters section as flex */
 .candc {
-    display:flex;
+    display: flex;
 }
 
+/* Styling for the background of cast and characters section */
 .candcbg {
-    background-color: rgb(116, 26, 59);
-    border: 2px solid;
-    color: rgb(255, 255, 255);
-    padding: 20px 20px;
+    background-color: rgb(116, 26, 59); /* Set background color */
+    border: 2px solid; /* Add border */
+    color: rgb(255, 255, 255); /* Set text color */
+    padding: 20px 20px; /* Add padding */
 }
 
+/* Hide the header */
 .head {
-    display:none;
+    display: none;
 }
 
+/* Styling for the background of the header */
 .headsbg {
-    background-color: rgb(19, 6, 73);
-    border: 2px solid;
-    color: rgb(255, 255, 255);
-    border-radius: 100px 30px 100px 5px;
-    box-shadow: 5px 5px 5px #828282; 
+    background-color: rgb(19, 6, 73); /* Set background color */
+    border: 2px solid; /* Add border */
+    color: rgb(255, 255, 255); /* Set text color */
+    border-radius: 100px 30px 100px 5px; /* Add border radius */
+    box-shadow: 5px 5px 5px #828282; /* Add shadow */
 }
