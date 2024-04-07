@@ -1,5 +1,8 @@
-body { background-color: rgb(183, 108, 121); }
+/* Styling for the body element */
+body { background-color: rgb(183, 108, 121); /* Background color for the entire page */
+}
 
+/* Styling for h3 elements */
 h3{
-    color: white;background-color:rgb(144, 7, 75);
+    color: white;background-color:rgb(144, 7, 75); /* Background color */
 }
