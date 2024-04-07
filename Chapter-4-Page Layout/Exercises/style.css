@@ -1,123 +1,136 @@
+/* Styling for h1 */
 h1 {
-    font-size: 50px;
-    font-family: Tahoma;
-    margin: 0;
-    margin-top: 25px;
-    border-bottom: 2px solid;
-    width: auto;
-    display: inline-block;
-    border-bottom-width: 5px;
+    font-size: 50px; /* Set font size */
+    font-family: Tahoma; /* Set font family */
+    margin: 0; /* Remove default margin */
+    margin-top: 25px; /* Set top margin */
+    border-bottom: 2px solid; /* Add bottom border */
+    width: auto; /* Automatically adjust width */
+    display: inline-block; /* Make it inline-block */
+    border-bottom-width: 5px; /* Set border bottom width */
 }
 
+/* Styling for h3 */
 h3 {
-    margin: 0; 
-    margin-top: 3px;
-    font-size: 30px;
-    border-bottom: 2px solid;
-    width: auto;
-    display: inline-block;
-    border-bottom-width: 3.5px;
+    margin: 0; /* Remove default margin */
+    margin-top: 3px; /* Set top margin */
+    font-size: 30px; /* Set font size */
+    border-bottom: 2px solid; /* Add bottom border */
+    width: auto; /* Automatically adjust width */
+    display: inline-block; /* Make it inline-block */
+    border-bottom-width: 3.5px; /* Set border bottom width */
 }
 
-h2{
-    border-bottom: 2px solid;
-    width: auto;
-    display: inline-block;
-    border-bottom-width: 3.5px;
-    margin: 0;
-    margin-top: 20px;
+/* Styling for h2 */
+h2 {
+    border-bottom: 2px solid; /* Add bottom border */
+    width: auto; /* Automatically adjust width */
+    display: inline-block; /* Make it inline-block */
+    border-bottom-width: 3.5px; /* Set border bottom width */
+    margin: 0; /* Remove default margin */
+    margin-top: 20px; /* Set top margin */
 }
 
-.navbar ul{
-    list-style-type: none;
-    background-color: #12042E;
-    padding: 10px;
-    margin: 0px;
-    overflow: hidden;
-    text-align: center;
+/* Styling for navbar */
+.navbar ul {
+    list-style-type: none; /* Remove list style */
+    background-color: #12042E; /* Set background color */
+    padding: 10px; /* Set padding */
+    margin: 0px; /* Remove default margin */
+    overflow: hidden; /* Handle overflow */
+    text-align: center; /* Center-align text */
 }
 
-.navbar a{
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
-    font-size: 27px;
-    font-family: Tahoma;
+.navbar a {
+    color: white; /* Set text color */
+    text-decoration: none; /* Remove text decoration */
+    padding: 15px; /* Set padding */
+    display: block; /* Display as block */
+    text-align: center; /* Center-align text */
+    font-size: 27px; /* Set font size */
+    font-family: Tahoma; /* Set font family */
 }
 
-.navbar li{
-    display: inline-block;
+.navbar li {
+    display: inline-block; /* Display as inline-block */
 }
 
-body{
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
+/* Styling for body */
+body {
+    margin: 0px; /* Remove default margin */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Set flex direction to column */
 }
 
+/* Styling for Topbg */
 .Topbg {
-    background-color: #12042E;
-    border: 1px solid;
-    border-color:#12042E;
-    color: rgb(255, 255, 255);
+    background-color: #12042E; /* Set background color */
+    border: 1px solid; /* Add border */
+    border-color: #12042E; /* Set border color */
+    color: rgb(255, 255, 255); /* Set text color */
 }
 
-.main{
-    display: flex;
-    flex: 1;
+/* Styling for main */
+.main {
+    display: flex; /* Use flexbox layout */
+    flex: 1; /* Allow main to grow and fill remaining space */
 }
 
+/* Styling for left */
 .left {
-    margin-left: 20px;
-    font-family: Arial;
-    font-size: 20px;
-    border-bottom: 3px solid white;
+    margin-left: 20px; /* Set left margin */
+    font-family: Arial; /* Set font family */
+    font-size: 20px; /* Set font size */
+    border-bottom: 3px solid white; /* Add bottom border */
 }
 
+/* Styling for h3 */
 h3 {
-    font-family: Tahoma;
+    font-family: Tahoma; /* Set font family */
 }
 
-.bg{
-    background-color: #1A2E66;
-    border: 1px solid #1A2E66;
-    float: right; width: 700px; 
-    color: rgb(255, 255, 255);
-  }
+/* Styling for bg */
+.bg {
+    background-color: #1A2E66; /* Set background color */
+    border: 1px solid #1A2E66; /* Add border */
+    float: right; /* Float to the right */
+    width: 700px; /* Set width */
+    color: rgb(255, 255, 255); /* Set text color */
+}
+
+/* Styling for right */
+.right {
+    background-color: #1A2E66; /* Set background color */
+    margin-left: 10px; /* Set left margin */
+    padding: 35px; /* Set padding */
+    font-family: Arial; /* Set font family */
+    font-size: 20px; /* Set font size */
+    color: white; /* Set text color */
+    float: right; /* Float to the right */
+    border-bottom: 10px solid white; /* Add bottom border */
+    border-top: 20px solid white; /* Add top border */
+}
+
+.right ul {
+    list-style-type: '-'; /* Set list style type */
+    padding: 0; /* Remove padding */
+}
 
 .right {
-    background-color: #1A2E66;
-    margin-left: 10px;
-    padding: 35px;
-    font-family: Arial;
-    font-size: 20px;
-    color: white;
-    float: right;
-    border-bottom: 10px solid white;
-    border-top: 20px solid white;
+    float: right; /* Float to the right */
+    position: relative; /* Set position to relative */
+    z-index: 9; /* Set z-index */
 }
 
-.right ul{
-    list-style-type: '-';
-    padding: 0;
-}
-
-.right {
-    float: right;
-    position: relative;
-    z-index: 9;
-}
-
+/* Styling for footer */
 .footer {
-    text-align: center;
-    font-family: Arial;
-    background-color: #8D17E9;
-    color: rgb(255, 255, 255);
-    border-bottom: 5px solid #8D17E9;
-    padding: 0px;
-    border-top: 5px solid #8D17E9;
-    font-size: 20px;
-    overflow: hidden;
+    text-align: center; /* Center-align text */
+    font-family: Arial; /* Set font family */
+    background-color: #8D17E9; /* Set background color */
+    color: rgb(255, 255, 255); /* Set text color */
+    border-bottom: 5px solid #8D17E9; /* Add bottom border */
+    padding: 0px; /* Set padding */
+    border-top: 5px solid #8D17E9; /* Add top border */
+    font-size: 20px; /* Set font size */
+    overflow: hidden; /* Handle overflow */
 }
