@@ -1,16 +1,20 @@
-body { background-color: #597daa;
-    margin:0px;
+/* Set background color and margin for the entire body */
+body {
+    background-color: #597daa;
+    margin: 0px;
 }
 
-.navbar ul{
+/* Style the unordered list inside the navbar */
+.navbar ul {
     list-style-type: none;
-    background-color:rgb(70, 52, 143);
+    background-color: rgb(70, 52, 143);
     padding: 0px;
     margin: 0px;
     overflow: hidden;
 }
 
-.navbar a{
+/* Style the links inside the navbar */
+.navbar a {
     color: white;
     text-decoration: none;
     padding: 15px;
@@ -18,18 +22,22 @@ body { background-color: #597daa;
     text-align: center;
 }
 
-.navbar a:hover{
-    background-color:rgb(30, 13, 97)
+/* Change link background color on hover */
+.navbar a:hover {
+    background-color: rgb(30, 13, 97);
 }
 
-.navbar li{
+/* Float the list items (links) to the left */
+.navbar li {
     float: left;
 }
 
+/* Flex display for the reviews section */
 .rev {
-    display:flex;
+    display: flex;
 }
 
+/* Styling for the background of the reviews section */
 .revbg {
     background-color: rgb(98, 26, 21);
     border: 2px solid;
@@ -37,14 +45,16 @@ body { background-color: #597daa;
     padding: 20px 20px;
 }
 
+/* Hide the element with class 'head' */
 .head {
-    display:none;
+    display: none;
 }
 
+/* Styling for the background of the header */
 .headsbg {
     background-color: rgb(19, 6, 73);
     border: 2px solid;
     color: rgb(255, 255, 255);
     border-radius: 100px 30px 100px 5px;
-    box-shadow: 5px 5px 5px #828282; 
+    box-shadow: 5px 5px 5px #828282;
 }
