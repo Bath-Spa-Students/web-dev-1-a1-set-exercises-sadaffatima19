@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Get elements from the DOM
     const soundboard = document.getElementById('soundboard');
     const textInput = document.getElementById('text-input');
     const convertButton = document.getElementById('convert-button');
@@ -28,10 +29,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const endIndex = Math.min(startIndex + samplesPerPage, audioSamples.length);
 
         for (let i = startIndex; i < endIndex; i++) {
+            // Create audio element
             const audioElement = document.createElement('audio');
             audioElement.src = `Audio Sampler/sample${i + 1}.mp3`;
             audioElement.preload = 'auto';
 
+            // Create button for each audio sample
             const button = document.createElement('button');
             button.className = 'audio-button';
             button.textContent = audioSamples[i].name;
@@ -41,14 +44,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 audioElement.play();
             });
 
+            // Create span to display duration
             const durationSpan = document.createElement('span');
             durationSpan.textContent = `${audioSamples[i].duration} seconds`;
 
+            // Create div to contain button and duration
             const sampleDiv = document.createElement('div');
             sampleDiv.classList.add('sample');
             sampleDiv.appendChild(button);
             sampleDiv.appendChild(durationSpan);
 
+            // Append sample div to soundboard
             soundboard.appendChild(sampleDiv);
         }
 
