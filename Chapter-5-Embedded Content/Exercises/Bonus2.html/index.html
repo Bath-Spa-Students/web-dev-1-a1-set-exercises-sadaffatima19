@@ -26,20 +26,25 @@ Use the below example as a reference:
     <link rel="stylesheet" type = "text/css" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Updated Soundboard</h1>
-        <div id="soundboard">
-            <!-- Audio samples will be displayed dynamically here -->
+    <div class="container"> <!-- Main container -->
+
+        <h1>Updated Soundboard</h1> <!-- Heading for the webpage -->
+
+        <div id="soundboard"> <!-- Container for dynamic audio samples -->
+            
         </div>
-        <div id="text-to-speech">
-            <textarea id="text-input" placeholder="Type text here..."></textarea>
-            <button id="convert-button">Convert to Audio</button>
+        <div id="text-to-speech"> <!-- Container for text-to-speech input -->
+            <textarea id="text-input" placeholder="Type text here..."></textarea> <!-- Textarea for user input -->
+            <button id="convert-button">Convert to Audio</button> <!-- Button to trigger conversion of text to audio -->
         </div>
-        <div id="pagination">
-            <img id="left-arrow" src="arrow-left.png" alt="Left Arrow">
-            <img id="right-arrow" src="arrow-right.png" alt="Right Arrow">
+
+        <div id="pagination"> <!-- Pagination controls -->
+            <img id="left-arrow" src="arrow-left.png" alt="Left Arrow"> <!-- Left arrow for navigating through audio samples -->
+            <img id="right-arrow" src="arrow-right.png" alt="Right Arrow"> <!-- Right arrow for navigating through audio samples -->
         </div>
+
     </div>
-    <script src="index.js"></script>
+    <script src="index.js"></script> <!-- Link to external JavaScript file -->
+    
 </body>
 </html>
