@@ -1,43 +1,49 @@
+/* Styling for all div elements with class "divs" */
 div.divs {
-    display: inline-block;
-    font-family: sans-serif;
-    font-size: 20px;
-    margin: 25px;
-    line-height: 100px;
-    text-align: center;
-    width: 200px;
-    height: 200px;
-    box-sizing: border-box;
-  }
+  display: inline-block; /* Display as inline block */
+  font-family: sans-serif; /* Set font family */
+  font-size: 20px; /* Set font size */
+  margin: 25px; /* Set margin */
+  line-height: 100px; /* Set line height */
+  text-align: center; /* Center align text */
+  width: 200px; /* Set width */
+  height: 200px; /* Set height */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
 
-  div#first{
-    padding: 1rem;
-    box-shadow: 0 0 0 4px purple,
-                10px 10px 10px hsl(0, 91%, 41%);
-  }
+/* Styling for div with ID "first" */
+div#first {
+  padding: 1rem; /* Set padding */
+  box-shadow: 0 0 0 4px purple, /* Add purple border */
+              10px 10px 10px hsl(0, 91%, 41%); /* Add shadow with HSL color */
+}
 
-  div#second{
-    padding: 2rem;
-    box-shadow: 0 0 0 4px rgb(99, 199, 72),
-                inset 10px 10px 10px black;
-  }
+/* Styling for div with ID "second" */
+div#second {
+  padding: 2rem; /* Set padding */
+  box-shadow: 0 0 0 4px rgb(99, 199, 72), /* Add green border */
+              inset 10px 10px 10px black; /* Add inner shadow */
+}
 
-  div#third{
-    border-radius: 15px;
-    padding: 1rem;
-    box-shadow: 0 0 0 5px rgb(211, 105, 34),
-                0 0 0 20px blue,
-                0 0 0 30px red,
-                0 0 0 40px green;
-  }
+/* Styling for div with ID "third" */
+div#third {
+  border-radius: 15px; /* Set border radius */
+  padding: 1rem; /* Set padding */
+  box-shadow: 0 0 0 5px rgb(211, 105, 34), /* Add orange border */
+              0 0 0 20px blue, /* Add blue border */
+              0 0 0 30px red, /* Add red border */
+              0 0 0 40px green; /* Add green border */
+}
 
-  div#fourth{
-    border: 4px solid rgb(131, 84, 43);
-    text-shadow: 3px 4px 1px;
-  }
-  
-  body {
-    margin: 100px auto;
-    width: max-content;
-    padding: 15px;
-  }
+/* Styling for div with ID "fourth" */
+div#fourth {
+  border: 4px solid rgb(131, 84, 43); /* Add border */
+  text-shadow: 3px 4px 1px; /* Add text shadow */
+}
+
+/* Styling for the body */
+body {
+  margin: 100px auto; /* Set margin */
+  width: max-content; /* Set width to fit content */
+  padding: 15px; /* Set padding */
+}
