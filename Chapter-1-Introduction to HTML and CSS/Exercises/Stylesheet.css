@@ -1,9 +1,13 @@
+/* Styling for h1 elements */
 h1{
-    color: rgb(64, 10, 64);
-    background-color:rgb(137, 137, 192);
-    border-bottom: 2px dashed #191970;
+    color: rgb(64, 10, 64); /* Text color */
+    background-color:rgb(137, 137, 192); /* Background color */
+    border-bottom: 2px dashed #191970; /* Bottom border */
 }
 
+/* Styling for h2 elements */
 h2{
-    color: rgb(64, 10, 64);background-color:rgb(137, 137, 192);border-bottom: 2px dashed #191970;
+    color: rgb(64, 10, 64); /* Text color */
+    background-color:rgb(137, 137, 192); /* Background color */
+    border-bottom: 2px dashed #191970; /* Bottom border */
 }
