@@ -1,4 +1,4 @@
-.center{
-    margin: 0;
-    margin-top: 190px;
+.center {
+    margin: 0; /* Resetting all margins */
+    margin-top: 190px; /* Setting top margin to create space above */
 }
