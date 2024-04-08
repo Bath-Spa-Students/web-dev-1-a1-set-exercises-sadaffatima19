@@ -12,7 +12,6 @@ body {
     background-color: #fff; /* Set background color for the container */
     border-radius: 10px; /* Add border radius to create rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle depth effect */
-    display: flex; /* Use flexbox for layout */
 }
 
 h1 {
