@@ -25,6 +25,7 @@ nav ul {
     list-style-type: none; /* Remove list style */
     padding: 10px 0; /* Set padding */
     text-align: center; /* Center-align text */
+    margin-top: 17px;
 }
 
 nav ul li {
@@ -61,6 +62,10 @@ aside {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
+aside ul {
+    margin-left: 20px;
+}
+
 aside h2 {
     color: #fff; /* Set text color */
 }
@@ -68,6 +73,10 @@ aside h2 {
 /* Styling for main content section */
 section {
     flex-basis: 65%; /* Set width */
+}
+
+section h2{
+    margin-bottom: 10px;
 }
 
 /* Styling for assignments */
