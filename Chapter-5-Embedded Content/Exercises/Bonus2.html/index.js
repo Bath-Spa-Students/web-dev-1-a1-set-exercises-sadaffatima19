@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Audio samples data
     const audioSamples = [
-        { name: "Ah Ha", duration: 4 },
-        { name: "Back of the Net", duration: 3 },
-        { name: "Bang Out of Order", duration: 5 },
-        { name: "Dan", duration: 2 },
-        { name: "Email of the Evening", duration: 6 },
-        { name: "Hello Partridge", duration: 4 },
-        { name: "I Ate a Scotch Egg", duration: 3 },
-        { name: "I'm Confused", duration: 2 }
+        { name: "Ah Ha", duration: 4, path: "../../Exercises/Audio Sampler/Audio/ah-ha.mp3"},
+        { name: "Back of the Net", duration: 3, path: "../../Exercises/Audio Sampler/Audio/back-of-the-net.mp3" },
+        { name: "Bang Out of Order", duration: 5, path: "../../Exercises/Audio Sampler/Audio/bangoutoforder.mp3" },
+        { name: "Dan", duration: 2, path: "../../Exercises/Audio Sampler/Audio/dan.mp3" },
+        { name: "Email of the Evening", duration: 6, path: "../../Exercises/Audio Sampler/Audio/emailoftheevening.mp3" },
+        { name: "Hello Partridge", duration: 4, path: "../../Exercises/Audio Sampler/Audio/hellopartridge.mp3" },
+        { name: "I Ate a Scotch Egg", duration: 3, path: "../../Exercises/Audio Sampler/Audio/iateascotchegg.mp3" },
+        { name: "I'm Confused", duration: 2, path: "../../Exercises/Audio Sampler/Audio/imconfused.mp3" }
     ];
 
     // Pagination variables
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         for (let i = startIndex; i < endIndex; i++) {
             // Create audio element
             const audioElement = document.createElement('audio');
-            audioElement.src = `Audio Sampler/sample${i + 1}.mp3`;
+            audioElement.src = audioSamples[i].path;
             audioElement.preload = 'auto';
 
             // Create button for each audio sample
