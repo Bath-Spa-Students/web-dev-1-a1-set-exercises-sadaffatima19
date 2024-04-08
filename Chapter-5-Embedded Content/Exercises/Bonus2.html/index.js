@@ -8,14 +8,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Audio samples data
     const audioSamples = [
-        { name: "Ah Ha", duration: 4, path: "../../Exercises/Audio Sampler/Audio/ah-ha.mp3"},
-        { name: "Back of the Net", duration: 3, path: "../../Exercises/Audio Sampler/Audio/back-of-the-net.mp3" },
-        { name: "Bang Out of Order", duration: 5, path: "../../Exercises/Audio Sampler/Audio/bangoutoforder.mp3" },
-        { name: "Dan", duration: 2, path: "../../Exercises/Audio Sampler/Audio/dan.mp3" },
-        { name: "Email of the Evening", duration: 6, path: "../../Exercises/Audio Sampler/Audio/emailoftheevening.mp3" },
-        { name: "Hello Partridge", duration: 4, path: "../../Exercises/Audio Sampler/Audio/hellopartridge.mp3" },
-        { name: "I Ate a Scotch Egg", duration: 3, path: "../../Exercises/Audio Sampler/Audio/iateascotchegg.mp3" },
-        { name: "I'm Confused", duration: 2, path: "../../Exercises/Audio Sampler/Audio/imconfused.mp3" }
+        { name: "Ah Ha", duration: 1, path: "../../Exercises/Audio Sampler/Audio/ah-ha.mp3"},
+        { name: "Back of the Net", duration: 1, path: "../../Exercises/Audio Sampler/Audio/back-of-the-net.mp3" },
+        { name: "Bang Out of Order", duration: 0, path: "../../Exercises/Audio Sampler/Audio/bangoutoforder.mp3" },
+        { name: "Dan", duration: 3, path: "../../Exercises/Audio Sampler/Audio/dan.mp3" },
+        { name: "Email of the Evening", duration: 3, path: "../../Exercises/Audio Sampler/Audio/emailoftheevening.mp3" },
+        { name: "Hello Partridge", duration: 0, path: "../../Exercises/Audio Sampler/Audio/hellopartridge.mp3" },
+        { name: "I Ate a Scotch Egg", duration: 1, path: "../../Exercises/Audio Sampler/Audio/iateascotchegg.mp3" },
+        { name: "I'm Confused", duration: 1, path: "../../Exercises/Audio Sampler/Audio/imconfused.mp3" },
+        { name: "Aaaa", duration: 1, path: "../../Exercises/Audio Sampler/Audio/aaaa.mp3" },
+        { name: "Ahahahaha", duration: 1, path: "../../Exercises/Audio Sampler/Audio/ahahahaha.mp3" },
+        { name: "Uuuu-aaaa", duration: 2, path: "../../Exercises/Audio Sampler/Audio/uuuu-aaaa.mp3" },
+        { name: "Bye-Bye", duration: 1, path: "../../Exercises/Audio Sampler/Audio/bye-bye.mp3" },
+        { name: "Hello", duration: 0, path: "../../Exercises/Audio Sampler/Audio/hello.mp3" },
+        { name: "Yeah-Yeah", duration: 1, path: "../../Exercises/Audio Sampler/Audio/yeah-yeah.mp3" },
+        { name: "Hey-Whats-Up", duration: 1, path: "../../Exercises/Audio Sampler/Audio/hey-whats-up.mp3" },
+        { name: "Giggle", duration: 3, path: "../../Exercises/Audio Sampler/Audio/giggle.mp3" },
+        { name: "Hurry-Up", duration: 1, path: "../../Exercises/Audio Sampler/Audio/hurry-up.mp3" },
     ];
 
     // Pagination variables
