@@ -30,13 +30,15 @@ Use the below example as a reference:
 
         <h1>Updated Soundboard</h1> <!-- Heading for the webpage -->
 
-        <div id="soundboard"> <!-- Container for dynamic audio samples -->
-            <!-- Audio samples will be dynamically added here -->
-        </div>
+        <div id="text-and-soundboard"> <!-- Container for text area and soundboard -->
+            <div id="text-to-speech"> <!-- Container for text-to-speech input -->
+                <textarea id="text-input" placeholder="Type text here..."></textarea> <!-- Textarea for user input -->
+                <button id="convert-button">Convert to Audio</button> <!-- Button to trigger conversion of text to audio -->
+            </div>
 
-        <div id="text-to-speech"> <!-- Container for text-to-speech input -->
-            <textarea id="text-input" placeholder="Type text here..."></textarea> <!-- Textarea for user input -->
-            <button id="convert-button">Convert to Audio</button> <!-- Button to trigger conversion of text to audio -->
+            <div id="soundboard"> <!-- Container for dynamic audio samples -->
+                <!-- Audio samples will be dynamically added here -->
+            </div>
         </div>
 
         <div id="pagination"> <!-- Pagination controls -->
