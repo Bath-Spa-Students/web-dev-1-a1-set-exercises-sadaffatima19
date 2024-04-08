@@ -44,10 +44,11 @@ h1 {
     border-radius: 10px; /* Border radius for rounded corners */
     font-size: 1.2rem; /* Font size */
     cursor: pointer; /* Change cursor to pointer on hover */
-    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition */
 }
 
 /* Hover effect for sound buttons */
 .audio-button:hover {
-    background-color: #544caf; /* Darken background color on hover */
+    background-color: #372da7; /* Darken background color on hover */
+    color: #6ca2ce; /* Change text color on hover */
 }
