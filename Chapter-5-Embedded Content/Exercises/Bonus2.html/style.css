@@ -12,6 +12,7 @@ body {
     background-color: #fff; /* Set background color for the container */
     border-radius: 10px; /* Add border radius to create rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle depth effect */
+    display: flex; /* Use flexbox for layout */
 }
 
 h1 {
@@ -24,8 +25,12 @@ h1 {
     display: grid; /* Use CSS grid for soundboard layout */
     grid-template-columns: repeat(3, 1fr); /* Divide soundboard into 3 equal columns */
     gap: 20px; /* Add gap between grid items */
-    overflow-y: auto; /* Enable vertical scrolling if soundboard exceeds its height */
     max-height: 400px; /* Set maximum height for the soundboard with vertical scrolling */
+    overflow: hidden; /* Hide horizontal and vertical overflow */
+    margin-left: 20px; /* Add margin to the left side of the soundboard container */
+    max-height: 400px; /* Set maximum height for the soundboard with vertical scrolling */
+    flex: 0 1 auto; /* Allow shrinking, don't allow growing */
+    width: 45%; /* Set width for the soundboard area */
 }
 
 .sample {
@@ -39,6 +44,8 @@ h1 {
     text-align: center; /* Center align text */
     transition: background-color 0.3s; /* Add transition effect for background color change */
     cursor: pointer; /* Change cursor to pointer on hover */
+    max-height: calc(90% - 40px); /* Calculate max height for each grid item */
+    overflow: hidden; /* Hide overflow within each grid item */
 }
 
 .sample:nth-child(odd) {
@@ -73,6 +80,8 @@ span.duration {
 #text-to-speech {
     margin-top: 20px; /* Add top margin for text-to-speech section */
     text-align: center; /* Center align text */
+    flex: 1; /* Take up remaining space */
+    margin-right: 20px; /* Add margin to the right side of the text area */
 }
 
 textarea {
@@ -120,4 +129,20 @@ textarea {
 
 #right-arrow {
     display: inline-block; /* Display right arrow */
+}
+
+#text-and-soundboard {
+    display: flex;
+    flex-direction: row;
+}
+
+#text-to-speech {
+    flex: 1; /* Take up remaining space */
+    margin-right: 20px; /* Add margin to separate from soundboard */
+}
+
+#soundboard {
+    flex: 1; /* Take up remaining space */
+    overflow-y: auto;
+    max-height: 400px;
 }
